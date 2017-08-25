@@ -1,5 +1,8 @@
 package cn.edu.swpu.cins.learnSomethings.collection;
 
+import cn.edu.swpu.cins.learnSomethings.aspect.LogAspect;
+import org.apache.catalina.core.ApplicationContext;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,6 +30,7 @@ public class TestGeneric {
     }
 
     public static  void main(String[] args){
+
         TestGeneric tg = new TestGeneric();
         tg.testAdd();
         tg.testForEach();

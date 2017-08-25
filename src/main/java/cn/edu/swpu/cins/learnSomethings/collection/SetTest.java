@@ -53,6 +53,7 @@ public class SetTest {
         SetTest st = new SetTest();
         st.testAdd();
         st.testForEach();
+        System.out.println(2.0-1.1);
 //
 //        Student student = new Student(1,"小明");
 //        Scanner scanner = new Scanner(System.in);

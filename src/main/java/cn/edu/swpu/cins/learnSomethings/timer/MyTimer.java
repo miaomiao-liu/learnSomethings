@@ -35,8 +35,8 @@ public class MyTimer {
          * 2) schedule(task,time,period):
          * 在时间等于或超过time时，执行一次task，之后每隔period毫秒执行一次
          */
-//        myTimerTask.setName("schedule 2");
-//        timer.schedule(myTimerTask,calendar.getTime(),2000);
+        myTimerTask.setName("schedule 2");
+        timer.schedule(myTimerTask,calendar.getTime(),2000);
 
         /**
         * 3) schedule(task,delay):
@@ -70,11 +70,11 @@ public class MyTimer {
 //        timer.scheduleAtFixedRate(myTimerTask,2000,4000);
 
 
-        myTimerTask.setName("schedule");
-        timer.schedule(myTimerTask,2000);
+//        myTimerTask.setName("schedule");
+//        timer.schedule(myTimerTask,2000);
         //scheduledExecutionTime() 打印当前最近的一次计划时间
-        System.out.println("scheduled time is :"
-                +sf.format(myTimerTask.scheduledExecutionTime()));
+//        System.out.println("scheduled time is :"
+//                +sf.format(myTimerTask.scheduledExecutionTime()));
 
     }
 }

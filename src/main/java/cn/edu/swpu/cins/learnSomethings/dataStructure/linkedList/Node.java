@@ -1,4 +1,4 @@
-package cn.edu.swpu.cins.learnSomethings.dataStructure.linkedList.CommonPart;
+package cn.edu.swpu.cins.learnSomethings.dataStructure.linkedList;
 
 /**
  * Created by miaomiao on 17-8-21.

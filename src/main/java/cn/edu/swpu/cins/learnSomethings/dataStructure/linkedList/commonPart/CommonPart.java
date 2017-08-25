@@ -1,11 +1,13 @@
-package cn.edu.swpu.cins.learnSomethings.dataStructure.linkedList.CommonPart;
+package cn.edu.swpu.cins.learnSomethings.dataStructure.linkedList.commonPart;
+
+import cn.edu.swpu.cins.learnSomethings.dataStructure.linkedList.Node;
 
 /**
  * Created by miaomiao on 17-8-21.
  */
 public class CommonPart {
 
-    public void printCommonPart(Node head1,Node head2){
+    public void printCommonPart(Node head1, Node head2){
         System.out.println("common part :");
         while (head1 != null && head2 != null){
             if (head1.value < head2.value){
@@ -25,12 +27,11 @@ public class CommonPart {
     public static void main(String[] args){
         CommonPart commonPart = new CommonPart();
         Node head1 = new Node(1);
-//        head1.next.value = 4;
 //        head1.next.value = 5;
 //        head1.next.value = 9;
 //        head1.next.value = 11;
         Node head2 = new Node(2);
-//        head2.next.value = 2;
+//        head2.next.value = 4;
 //        head2.next.value = 5;
 //        head2.next.value = 6;
 //        head2.next.value = 8;

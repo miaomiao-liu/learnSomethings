@@ -1,26 +1,44 @@
 package cn.edu.swpu.cins.learnSomethings.jedis;
 
 import org.junit.Test;
+import org.springframework.stereotype.Component;
 import redis.clients.jedis.BinaryClient;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.Tuple;
 
+import static jdk.nashorn.internal.objects.Global.println;
+
 /**
  * Created by miaomiao on 17-8-15.
  */
+@Component
 public class JedisDemo1 {
+
+//    JedisPool pool;
 
     public static void print(int index,Object object){
         System.out.println(String.format("%d,%s",index,object.toString()));
+
     }
 
-    public static void main(String[] args){
-        Jedis jedis = new Jedis("127.0.0.1",6379);
-        jedis.flushAll();
+    public static void main(String[] args) {
+//        JedisDemo1 jedisDemo1 = new JedisDemo1();
+//        jedisDemo1.test();
+//    }
+//
+//
+//     void test(){
+
+         JedisPool pool = new JedisPool("redis://127.0.0.1:6379/10");
+         Jedis jedis = null;
+
+         jedis=pool.getResource();
+//         jedis = new Jedis("redis://127.0.0.1:6379/9");
+
 
         jedis.set("hello","world");
-        print(1,jedis.get("hello"));
+         System.out.println(jedis.get("hello"));
         jedis.rename("hello","newHello");
         print(1,jedis.get("newHello"));
         //设置过期时间   运行后在命令行中查看
@@ -107,13 +125,14 @@ public class JedisDemo1 {
         print(37,jedis.zrank(rankKey,"Ben"));
         print(38,jedis.zrevrank(rankKey,"Ben"));
 
-//        JedisPool pool = new JedisPool();
-//        for (int i = 0; i <100; i++){
-//            Jedis j = pool.getResource();
-//            j.get("a");
-//            System.out.println("POOL"+i);
+//        pool = new JedisPool();
+        for (int i = 0; i <100; i++){
+            Jedis j = pool.getResource();
+            j.get("a");
+            System.out.println("POOL"+i);
 //            j.close();
-//        }
+        }
+
 
         String setKey = "zset";
         jedis.zadd(setKey, 1, "a");
@@ -144,4 +163,5 @@ public class JedisDemo1 {
         System.out.println(value);
         jedis.close();
     }
+
 }

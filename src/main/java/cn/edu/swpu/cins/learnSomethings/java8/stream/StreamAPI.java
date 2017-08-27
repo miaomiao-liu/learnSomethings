@@ -1,5 +1,6 @@
 package cn.edu.swpu.cins.learnSomethings.java8.stream;
 
+import cn.edu.swpu.cins.learnSomethings.jedis.JedisDemo1;
 import org.junit.Test;
 
 import java.util.Arrays;
@@ -12,6 +13,8 @@ import java.util.stream.Stream;
  * Created by miaomiao on 17-8-8.
  */
 public class StreamAPI {
+
+
 
     //清单4 ：构造流的几种常见方法
     @Test

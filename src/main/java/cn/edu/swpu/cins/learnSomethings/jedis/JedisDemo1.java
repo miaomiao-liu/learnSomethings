@@ -125,6 +125,8 @@ public class JedisDemo1 {
         print(37,jedis.zrank(rankKey,"Ben"));
         print(38,jedis.zrevrank(rankKey,"Ben"));
 
+
+
 //        pool = new JedisPool();
         for (int i = 0; i <100; i++){
             Jedis j = pool.getResource();
@@ -149,6 +151,8 @@ public class JedisDemo1 {
         print(42, jedis.zrange(setKey, 0, 10));
         jedis.zremrangeByLex(setKey, "(c", "+");
         print(43, jedis.zrange(setKey, 0, 2));
+
+
     }
 
 

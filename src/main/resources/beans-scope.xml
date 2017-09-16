@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="car" class="cn.edu.swpu.cins.learnSomethings.springShangguigu.autowiredTest.Car">
+        <property name="brand" value="Audi"></property>
+        <property name="price" value="500000"></property>
+    </bean>
+
+
+    <!--
+        scope 属性配置bean的作用域
+        默认为singleton :只声明一个bean，容器初始化时创建bean的实例
+        prototype：原型的，容器初始化时不创建bean的实例，而是在每次请求时都创建一个bean的实例，并返回
+    -->
+    <bean id="car2"
+          class="cn.edu.swpu.cins.learnSomethings.springShangguigu.autowiredTest.Car"
+    scope="prototype">
+        <property name="brand" value="Audi"></property>
+        <property name="price" value="500000"></property>
+    </bean>
+
+</beans>

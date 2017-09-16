@@ -12,5 +12,6 @@ public class Main {
 
         Person person = (Person) cxt.getBean("Person");
         System.out.println(person);
+
     }
 }

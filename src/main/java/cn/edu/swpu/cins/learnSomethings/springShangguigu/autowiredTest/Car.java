@@ -30,4 +30,8 @@ public class Car {
                 ", price=" + price +
                 '}';
     }
+
+    public Car() {
+        System.out.print("car's constructor  ...");
+    }
 }

@@ -1,14 +1,12 @@
-package cn.edu.swpu.cins.learnSomethings.springShangguigu;
-
-import java.util.Map;
+package cn.edu.swpu.cins.learnSomethings.springShangGuiGu;
 
 /**
  * Created by miaomiao on 17-9-13.
  */
-public class PersonCarMap {
+public class Person {
     private String name;
     private int age;
-    private Map<String, Car> cars;
+    private Car car;
 
     public String getName() {
         return name;
@@ -26,20 +24,29 @@ public class PersonCarMap {
         this.age = age;
     }
 
-    public Map<String, Car> getCars() {
-        return cars;
+    public Car getCar() {
+        return car;
     }
 
-    public void setCars(Map<String, Car> cars) {
-        this.cars = cars;
+    public void setCar(Car car) {
+        this.car = car;
     }
 
     @Override
     public String toString() {
-        return "PersonCarMap{" +
+        return "Person{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
-                ", cars=" + cars +
+                ", car=" + car +
                 '}';
+    }
+
+    public Person() {
+    }
+
+    public Person(String name, int age, Car car) {
+        this.name = name;
+        this.age = age;
+        this.car = car;
     }
 }

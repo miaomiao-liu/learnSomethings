@@ -1,4 +1,4 @@
-package cn.edu.swpu.cins.learnSomethings.springShangguigu.autowiredTest;
+package cn.edu.swpu.cins.learnSomethings.springShangGuiGu.autowiredTest;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -8,7 +8,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Main {
     public static void main(String[] args) {
 
-        ClassPathXmlApplicationContext cxt = new ClassPathXmlApplicationContext("beans-autowire.xml");
+        ClassPathXmlApplicationContext cxt = new ClassPathXmlApplicationContext("springShangGuiGu/beans-autowire.xml");
 
         Person person = (Person) cxt.getBean("Person");
         System.out.println(person);

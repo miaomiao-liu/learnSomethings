@@ -1,4 +1,4 @@
-package cn.edu.swpu.cins.learnSomethings.springShangguigu.autowiredTest;
+package cn.edu.swpu.cins.learnSomethings.springShangGuiGu.autowiredTest;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -10,7 +10,7 @@ public class MianTestRelation {
     public static void main(String[] args){
 
 
-        ClassPathXmlApplicationContext cxt = new ClassPathXmlApplicationContext("beans-relation.xml");
+        ClassPathXmlApplicationContext cxt = new ClassPathXmlApplicationContext("springShangGuiGu/beans-relation.xml");
 
 
 //        Address address = (Address) cxt.getBean("address");

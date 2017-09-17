@@ -1,11 +1,12 @@
-package cn.edu.swpu.cins.learnSomethings.springShangguigu;
+package cn.edu.swpu.cins.learnSomethings.springShangGuiGu.autowiredTest;
+
 
 /**
- * Created by miaomiao on 17-9-13.
+ * Created by miaomiao on 17-9-15.
  */
 public class Person {
     private String name;
-    private int age;
+    private Address address;
     private Car car;
 
     public String getName() {
@@ -16,12 +17,12 @@ public class Person {
         this.name = name;
     }
 
-    public int getAge() {
-        return age;
+    public Address getAddress() {
+        return address;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setAddress(Address address) {
+        this.address = address;
     }
 
     public Car getCar() {
@@ -36,17 +37,8 @@ public class Person {
     public String toString() {
         return "Person{" +
                 "name='" + name + '\'' +
-                ", age=" + age +
+                ", address=" + address +
                 ", car=" + car +
                 '}';
-    }
-
-    public Person() {
-    }
-
-    public Person(String name, int age, Car car) {
-        this.name = name;
-        this.age = age;
-        this.car = car;
     }
 }

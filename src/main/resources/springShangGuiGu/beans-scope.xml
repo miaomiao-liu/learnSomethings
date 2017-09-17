@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
        http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="car" class="cn.edu.swpu.cins.learnSomethings.springShangguigu.autowiredTest.Car">
+    <bean id="car" class="cn.edu.swpu.cins.learnSomethings.springShangGuiGu.autowiredTest.Car">
         <property name="brand" value="Audi"></property>
         <property name="price" value="500000"></property>
     </bean>
@@ -16,7 +16,7 @@
         prototype：原型的，容器初始化时不创建bean的实例，而是在每次请求时都创建一个bean的实例，并返回
     -->
     <bean id="car2"
-          class="cn.edu.swpu.cins.learnSomethings.springShangguigu.autowiredTest.Car"
+          class="cn.edu.swpu.cins.learnSomethings.springShangGuiGu.autowiredTest.Car"
     scope="prototype">
         <property name="brand" value="Audi"></property>
         <property name="price" value="500000"></property>

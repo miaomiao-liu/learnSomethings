@@ -1,4 +1,4 @@
-package cn.edu.swpu.cins.learnSomethings.springShangguigu;
+package cn.edu.swpu.cins.learnSomethings.springShangGuiGu;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -9,7 +9,7 @@ public class MainTestProperties {
 
     public static void main(String[] args) {
 
-        ClassPathXmlApplicationContext cxt = new ClassPathXmlApplicationContext("beans-properties.xml");
+        ClassPathXmlApplicationContext cxt = new ClassPathXmlApplicationContext("springShangGuiGu/beans-properties.xml");
 
         DataSource dataSource = (DataSource) cxt.getBean("properties");
         System.out.print(dataSource);

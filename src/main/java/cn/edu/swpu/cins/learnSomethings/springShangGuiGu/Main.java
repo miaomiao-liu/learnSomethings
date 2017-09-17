@@ -1,4 +1,4 @@
-package cn.edu.swpu.cins.learnSomethings.springShangguigu;
+package cn.edu.swpu.cins.learnSomethings.springShangGuiGu;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -9,7 +9,7 @@ public class Main {
 
     public static void main(String[] args){
 
-        ClassPathXmlApplicationContext cxt = new ClassPathXmlApplicationContext("springShangguigu.xml");
+        ClassPathXmlApplicationContext cxt = new ClassPathXmlApplicationContext("springShangGuiGu/springShangguigu.xml");
 
         Car car = (Car) cxt.getBean("car");
         System.out.println(car);

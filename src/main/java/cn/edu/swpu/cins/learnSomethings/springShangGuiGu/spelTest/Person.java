@@ -1,4 +1,4 @@
-package cn.edu.swpu.cins.learnSomethings.springShangguigu.autowiredTest;
+package cn.edu.swpu.cins.learnSomethings.springShangGuiGu.spelTest;
 
 
 /**
@@ -6,8 +6,10 @@ package cn.edu.swpu.cins.learnSomethings.springShangguigu.autowiredTest;
  */
 public class Person {
     private String name;
-    private Address address;
     private Car car;
+    private String city;
+    private String info;
+
 
     public String getName() {
         return name;
@@ -17,12 +19,20 @@ public class Person {
         this.name = name;
     }
 
-    public Address getAddress() {
-        return address;
+    public String getCity() {
+        return city;
     }
 
-    public void setAddress(Address address) {
-        this.address = address;
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getInfo() {
+        return info;
+    }
+
+    public void setInfo(String info) {
+        this.info = info;
     }
 
     public Car getCar() {
@@ -33,12 +43,14 @@ public class Person {
         this.car = car;
     }
 
+
     @Override
-    public String toString() {
+    public String   toString() {
         return "Person{" +
                 "name='" + name + '\'' +
-                ", address=" + address +
                 ", car=" + car +
+                ", city='" + city + '\'' +
+                ", info='" + info + '\'' +
                 '}';
     }
 }

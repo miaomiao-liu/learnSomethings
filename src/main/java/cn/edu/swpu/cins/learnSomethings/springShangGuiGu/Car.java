@@ -1,4 +1,4 @@
-package cn.edu.swpu.cins.learnSomethings.springShangguigu;
+package cn.edu.swpu.cins.learnSomethings.springShangGuiGu;
 
 /**
  * Created by miaomiao on 17-9-13.

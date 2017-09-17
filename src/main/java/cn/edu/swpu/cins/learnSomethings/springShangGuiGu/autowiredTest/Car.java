@@ -1,4 +1,4 @@
-package cn.edu.swpu.cins.learnSomethings.springShangguigu.autowiredTest;
+package cn.edu.swpu.cins.learnSomethings.springShangGuiGu.autowiredTest;
 
 /**
  * Created by miaomiao on 17-9-15.

@@ -1,4 +1,4 @@
-package cn.edu.swpu.cins.learnSomethings.springShangguigu.autowiredTest;
+package cn.edu.swpu.cins.learnSomethings.springShangGuiGu.autowiredTest;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -11,7 +11,7 @@ public class MainTestScope {
     public static void main(String[] args) {
 
 
-        ClassPathXmlApplicationContext cxt = new ClassPathXmlApplicationContext("beans-scope.xml");
+        ClassPathXmlApplicationContext cxt = new ClassPathXmlApplicationContext("springShangGuiGu/beans-scope.xml");
 
         Car car = (Car) cxt.getBean("car");
         Car car2 = (Car) cxt.getBean("car");

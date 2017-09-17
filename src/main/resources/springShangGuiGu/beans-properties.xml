@@ -8,9 +8,9 @@
        http://www.springframework.org/schema/context/spring-context.xsd">
 
     <!--导入属性文件-->
-    <context:property-placeholder location="classpath:db.properties"/>
+    <context:property-placeholder location="classpath:springShangGuiGu/db.properties"/>
 
-    <bean id="properties" class="cn.edu.swpu.cins.learnSomethings.springShangguigu.DataSource">
+    <bean id="properties" class="cn.edu.swpu.cins.learnSomethings.springShangGuiGu.DataSource">
         <property name="properties">
             <props>
                 <prop key="user">${user}</prop>

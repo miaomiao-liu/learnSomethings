@@ -1,16 +1,14 @@
-package cn.edu.swpu.cins.learnSomethings.springShangguigu;
+package cn.edu.swpu.cins.learnSomethings.springShangGuiGu;
 
-import java.util.List;
+import java.util.Map;
 
 /**
- * 为了xml配置集合属性
  * Created by miaomiao on 17-9-13.
  */
-public class PersonCars {
-
+public class PersonCarMap {
     private String name;
     private int age;
-    private List<Car> cars;
+    private Map<String, Car> cars;
 
     public String getName() {
         return name;
@@ -28,26 +26,17 @@ public class PersonCars {
         this.age = age;
     }
 
-    public List<Car> getCars() {
+    public Map<String, Car> getCars() {
         return cars;
     }
 
-    public void setCars(List<Car> cars) {
+    public void setCars(Map<String, Car> cars) {
         this.cars = cars;
-    }
-
-    public PersonCars(String name, int age, List<Car> cars) {
-        this.name = name;
-        this.age = age;
-        this.cars = cars;
-    }
-
-    public PersonCars() {
     }
 
     @Override
     public String toString() {
-        return "PersonCars{" +
+        return "PersonCarMap{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 ", cars=" + cars +

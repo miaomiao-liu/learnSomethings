@@ -6,18 +6,18 @@
 
     <!--抽象的bean： 在IOC容器中不能被实例化 ，只用来被继承配置
     若某一个bean的class属性没有指定，则该bean必须是一个抽象bean -->
-    <bean id="address" class="cn.edu.swpu.cins.learnSomethings.springShangguigu.autowiredTest.Address"
+    <bean id="address" class="cn.edu.swpu.cins.learnSomethings.springShangGuiGu.autowiredTest.Address"
     p:city="BeiJing" p:street="WuDaoKou" abstract="true"></bean>
 
 
     <!--bean配置的继承 ： 使用bean的parent属性指定继承哪个bean的配置-->
     <bean id="address2" p:street="DaZhongSi" parent="address"></bean>
 
-    <bean id="car" class="cn.edu.swpu.cins.learnSomethings.springShangguigu.autowiredTest.Car"
+    <bean id="car" class="cn.edu.swpu.cins.learnSomethings.springShangGuiGu.autowiredTest.Car"
     p:brand="Audi" p:price="200000"></bean>
 
     <!--bean的依赖 ： 用address-ref属性 -->
-    <bean id="person" class="cn.edu.swpu.cins.learnSomethings.springShangguigu.autowiredTest.Person"
+    <bean id="person" class="cn.edu.swpu.cins.learnSomethings.springShangGuiGu.autowiredTest.Person"
     p:name="Tom" p:address-ref="address2" depends-on="car"></bean>
 
 </beans>

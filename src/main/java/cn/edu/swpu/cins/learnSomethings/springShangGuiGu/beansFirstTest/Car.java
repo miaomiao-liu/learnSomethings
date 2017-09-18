@@ -1,4 +1,4 @@
-package cn.edu.swpu.cins.learnSomethings.springShangGuiGu;
+package cn.edu.swpu.cins.learnSomethings.springShangGuiGu.beansFirstTest;
 
 /**
  * Created by miaomiao on 17-9-13.

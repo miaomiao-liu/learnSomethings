@@ -1,4 +1,4 @@
-package cn.edu.swpu.cins.learnSomethings.springShangGuiGu;
+package cn.edu.swpu.cins.learnSomethings.springShangGuiGu.beansFirstTest;
 
 import java.util.List;
 

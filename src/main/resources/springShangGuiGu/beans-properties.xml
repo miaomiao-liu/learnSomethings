@@ -10,7 +10,7 @@
     <!--导入属性文件-->
     <context:property-placeholder location="classpath:springShangGuiGu/db.properties"/>
 
-    <bean id="properties" class="cn.edu.swpu.cins.learnSomethings.springShangGuiGu.DataSource">
+    <bean id="properties" class="cn.edu.swpu.cins.learnSomethings.springShangGuiGu.beansFirstTest.DataSource">
         <property name="properties">
             <props>
                 <prop key="user">${user}</prop>

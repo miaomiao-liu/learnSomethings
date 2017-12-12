@@ -1,7 +1,6 @@
 package cn.edu.swpu.cins.learnSomethings.springShangGuiGu.aopImpl;
 
 import org.aspectj.lang.JoinPoint;
-import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;

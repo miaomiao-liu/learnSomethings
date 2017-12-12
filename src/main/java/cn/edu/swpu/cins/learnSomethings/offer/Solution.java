@@ -9,9 +9,9 @@ import java.util.List;
 
 public class Solution {
     public static void main(String[] args){
-        Fibonacci fibonacci = new Fibonacci();
-        int mm=6;
-        System.out.println(fibonacci.test(mm));
+        PrintListFromTailToHead print = new PrintListFromTailToHead();
+        ListNode listNode = new ListNode(1);
+        System.out.println(print.printListFromTailToHead(listNode));
 
     }
 
